@@ -1,0 +1,24 @@
+{
+  "name": "tiny-modale-react",
+  "version": "1.0.0",
+  "description": "A tiny-modale-react component",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "styled-components": "^6.1.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tiny-modale-react.git"
+  },
+  "keywords": ["react", "modal", "component", "ui"]
+
+}
