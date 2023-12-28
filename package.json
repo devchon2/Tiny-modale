@@ -1,24 +1,37 @@
 {
-  "name": "tiny-modale-react",
-  "version": "1.0.0",
-  "description": "A tiny-modale-react component",
-  "main": "index.jsx",
+  "name": "tinymodale",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "styled-components": "^6.1.1"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.1",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "6.1.6",
+    "rimraf": "^5.0.5"
   },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/tiny-modale-react.git"
-  },
-  "keywords": ["react", "modal", "component", "ui"]
-
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
