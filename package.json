@@ -1,11 +1,11 @@
 {
   "name": "tinymodalebyrchon",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a lightweight modale component",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "./node_modules/.bin/babel src/lib/TinyModale.jsx --out-file index.js",
+    "build": "./node_modules/.bin/babel src/lib/ --out-file index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

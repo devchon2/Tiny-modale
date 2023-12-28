@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes, css } from "styled-components";
+import React from "react";
 
 //Bump Animation
 const BumpAnimation = () => keyframes`

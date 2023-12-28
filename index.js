@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = TinyModale;
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16;
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
@@ -211,15 +211,15 @@ function TinyModale(_ref) {
     //not show the modale if view is inactive
     return null;
   }
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(StyledFullContainer, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(StyledFullContainer, {
     id: "FullContainer"
-  }, /*#__PURE__*/React.createElement(StyledBGContainer, {
+  }, /*#__PURE__*/_react.default.createElement(StyledBGContainer, {
     id: "bgContainer",
     $bgcontainercolor: bgColor,
     $bgcontaineropacity: opa,
     $bganimation: bgAnim,
     onClick: handleClose
-  }), /*#__PURE__*/React.createElement(StyledModaleContainer, {
+  }), /*#__PURE__*/_react.default.createElement(StyledModaleContainer, {
     id: "modaleContainer",
     $modalecontainerwidth: mdlSize,
     $modalecontainerheight: mdlSize,
@@ -228,26 +228,26 @@ function TinyModale(_ref) {
     $modaleboxcolor: mdlBoxColor,
     $modaleanimation: mdlAnim,
     $modaleOpacity: mdlOpacity
-  }, /*#__PURE__*/React.createElement(StyledModaleContent, {
+  }, /*#__PURE__*/_react.default.createElement(StyledModaleContent, {
     id: "modaleContent"
-  }, /*#__PURE__*/React.createElement(StyledModaleCloseButton, {
+  }, /*#__PURE__*/_react.default.createElement(StyledModaleCloseButton, {
     id: "closeItem",
     onClick: handleClose,
     $closeitembgColor: itmBtnColor,
     $closeItembtncolor: itmColor,
     $closeitembuttonsize: itmBtnSize,
     $closeItembuttonradius: CloseItemRadius
-  }, /*#__PURE__*/React.createElement(StyledModaleClosebuttonTextContent, {
+  }, /*#__PURE__*/_react.default.createElement(StyledModaleClosebuttonTextContent, {
     id: "closeItemTextContent",
     $closeitembgColor: btnColor,
     $closeitembuttonsize: itmBtnSize,
     $closeItemFontColor: itmColor
-  }, "\u2716")), /*#__PURE__*/React.createElement(StyledModaleMessage, {
+  }, "\u2716")), /*#__PURE__*/_react.default.createElement(StyledModaleMessage, {
     id: "message",
     $closeItemTextcolor: txtColor,
     $textsize: txtSize,
     $textfamily: txtFamily
-  }, msg), /*#__PURE__*/React.createElement(StyledModaleBtn, {
+  }, msg), /*#__PURE__*/_react.default.createElement(StyledModaleBtn, {
     id: "button",
     onClick: btnOnClick ? btnOnClick && handleClose : handleClose //if btnOnClick is true then call btnOnClick and handleClose functions
     ,
