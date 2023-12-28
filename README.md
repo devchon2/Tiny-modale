@@ -1,11 +1,11 @@
 # English version
 
-# tinymodale - A React Modal Component
+# Tiny-modale-react - A React Modal Component
 ### version 0.1.0
 
 ## Overview
 
-`tinymodale` is a versatile React modal component with customizable animations and style properties. Utilizing `styled-components` for styling, it offers a flexible solution for integrating modals into React applications. This component is designed to be easily adaptable to a variety of use cases, ensuring seamless integration and enhanced user experience.
+`Tiny-Modale-React` is a versatile React modal component with customizable animations and style properties. Utilizing `styled-components` for styling, it offers a flexible solution for integrating modals into React applications. This component is designed to be easily adaptable to a variety of use cases, ensuring seamless integration and enhanced user experience.
 
 ## Features
 
@@ -19,7 +19,7 @@
 Install TinyModale component via npm:
 
 ```bash
-npm install tinymodale
+npm install tiny-modale-react
 ```
 
 ## Import
@@ -27,7 +27,7 @@ npm install tinymodale
 import TinyModale in your project:
 
 ```jsx
-import TinyModale from `tinymodale`
+import TinyModale from `tiny-modale-react`
 ```
 
 ## Examples
@@ -162,7 +162,7 @@ SOFTWARE.
 
 # version Française
 
-# tinymodale - Un composant modal React
+# Tiny-modale-react - Un composant modal React
 
 ## Vue d'ensemble
 
@@ -180,7 +180,7 @@ SOFTWARE.
 Installez TinyModale via npm :
 
 ```bash
-npm install tinymodale
+npm install tiny-modale-react
 ```
 
 ## Importation
@@ -188,7 +188,7 @@ npm install tinymodale
 import TinyModale dans votre projet :
 
 ```jsx
-import TinyModale from `tinymodale`
+import TinyModale from `tiny-modale-react`
 ```
 
 ## Exemples

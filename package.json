@@ -1,26 +1,34 @@
 {
-  "name": "tinymodale",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "name": "tiny-modale-1",
+  "version": "1.1.5",
+  "description": "a test of a modale component",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "./node_modules/.bin/babel src/lib/TinyModale.jsx --out-file index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devchon2/Tiny-modale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devchon2/Tiny-modale/issues"
+  },
+  "homepage": "https://github.com/devchon2/Tiny-modale#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^10.0.1",
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
     "cross-env": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "styled-components": "6.1.6",
-    "rimraf": "^5.0.5"
+    "styled-components": "^6.1.1"
+
   },
   "browserslist": {
     "production": [
