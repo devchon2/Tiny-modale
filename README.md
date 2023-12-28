@@ -1,11 +1,11 @@
 # English version
 
-# Tiny-modale-react - A React Modal Component
+# tinymodalebyrchon - A React Modal Component
 ### version 0.1.0
 
 ## Overview
 
-`Tiny-Modale-React` is a versatile React modal component with customizable animations and style properties. Utilizing `styled-components` for styling, it offers a flexible solution for integrating modals into React applications. This component is designed to be easily adaptable to a variety of use cases, ensuring seamless integration and enhanced user experience.
+`tinymodalebyrchon` is a versatile React modal component with customizable animations and style properties. Utilizing `styled-components` for styling, it offers a flexible solution for integrating modals into React applications. This component is designed to be easily adaptable to a variety of use cases, ensuring seamless integration and enhanced user experience.
 
 ## Features
 
@@ -19,7 +19,7 @@
 Install TinyModale component via npm:
 
 ```bash
-npm install tiny-modale-react
+npm install tinymodalebyrchon
 ```
 
 ## Import
@@ -27,7 +27,7 @@ npm install tiny-modale-react
 import TinyModale in your project:
 
 ```jsx
-import TinyModale from `tiny-modale-react`
+import TinyModale from `tinymodalebyrchon`
 ```
 
 ## Examples
@@ -162,7 +162,7 @@ SOFTWARE.
 
 # version Française
 
-# Tiny-modale-react - Un composant modal React
+# tinymodalebyrchon - Un composant modal React
 
 ## Vue d'ensemble
 
@@ -180,7 +180,7 @@ SOFTWARE.
 Installez TinyModale via npm :
 
 ```bash
-npm install tiny-modale-react
+npm install tinymodalebyrchon
 ```
 
 ## Importation
@@ -188,7 +188,7 @@ npm install tiny-modale-react
 import TinyModale dans votre projet :
 
 ```jsx
-import TinyModale from `tiny-modale-react`
+import TinyModale from `tinymodalebyrchon`
 ```
 
 ## Exemples

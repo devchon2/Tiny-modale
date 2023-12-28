@@ -1,7 +1,7 @@
 {
-  "name": "tiny-modale-1",
-  "version": "1.1.5",
-  "description": "a test of a modale component",
+  "name": "tinymodalebyrchon",
+  "version": "1.0.0",
+  "description": "a lightweight modale component",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",

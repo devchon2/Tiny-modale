@@ -4,17 +4,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = TinyModale;
-var _react = _interopRequireWildcard(require("react"));
+var _react = require("react");
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16;
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 //Bump Animation
-const BumpAnimation = () => (0, _styledComponents.keyframes)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n", "\n0% {\n  transform: scale(0);\n}\n\n57% {\n  transform: scale(0.95);\n}\n64% {\n  transform: scale(1.02);\n}\n71% {\n  transform: scale(0.98);\n}\n\n\n100% {\n  transform: scale(1);\n}"])), console.log("bump"));
+const BumpAnimation = () => (0, _styledComponents.keyframes)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n", "\n0% {\n  transform: scale(0);\n}\n\n57% {\n  transform: scale(0.95);\n}\n64% {\n  transform: scale(1.02);\n}\n71% {\n  transform: scale(0.98);\n}\n78% {\n  transform: scale(1);\n}\n85% {\n  transform: scale(1);\n}\n92% {\n  transform: scale(1);\n}\n95% {\n  transform: scale(1);\n}\n97% {\n  transform: scale(1);\n}\n\n100% {\n  transform: scale(1);\n}"])), console.log("bump"));
 
 //Fade Animation
-const FadeAnimation = opacity => (0, _styledComponents.keyframes)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n0 {\n  opacity: 0;\n}\n80% {\n  opacity: 0;\n}\n100% {\n  opacity : ", ";\n}\n"])), opacity);
+const FadeAnimation = opacity => (0, _styledComponents.keyframes)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n0 {\n  opacity: 0;\n}\n\n100% {\n  opacity : ", ";\n}\n"])), opacity);
 
 //Full Container Styles
 const StyledFullContainer = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ndisplay: flex;\njustify-content: center;\nalign-items: center;\nz-index: 1;\nwidth: 100%;\nheight: 100%;\nbackground-color: ", ";\nopacity: ", ";\nposition: absolute;\nscale: 1;\nanimation: ", ";\n\n"])), props => props.$bgcontainercolor, props => props.$bgcontaineropacity, props => props.$bganimation === "fade" ? (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n         ", " 0.4s ease-in-out \n      "])), FadeAnimation(props.$bgcontaineropacity)) : props.$bganimation === "bump" ? (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n         ", " 0.4s ease-in-out \n      "])), BumpAnimation(props.$bgscale)) : null);
@@ -211,15 +211,15 @@ function TinyModale(_ref) {
     //not show the modale if view is inactive
     return null;
   }
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(StyledFullContainer, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(StyledFullContainer, {
     id: "FullContainer"
-  }, /*#__PURE__*/_react.default.createElement(StyledBGContainer, {
+  }, /*#__PURE__*/React.createElement(StyledBGContainer, {
     id: "bgContainer",
     $bgcontainercolor: bgColor,
     $bgcontaineropacity: opa,
     $bganimation: bgAnim,
     onClick: handleClose
-  }), /*#__PURE__*/_react.default.createElement(StyledModaleContainer, {
+  }), /*#__PURE__*/React.createElement(StyledModaleContainer, {
     id: "modaleContainer",
     $modalecontainerwidth: mdlSize,
     $modalecontainerheight: mdlSize,
@@ -228,26 +228,26 @@ function TinyModale(_ref) {
     $modaleboxcolor: mdlBoxColor,
     $modaleanimation: mdlAnim,
     $modaleOpacity: mdlOpacity
-  }, /*#__PURE__*/_react.default.createElement(StyledModaleContent, {
+  }, /*#__PURE__*/React.createElement(StyledModaleContent, {
     id: "modaleContent"
-  }, /*#__PURE__*/_react.default.createElement(StyledModaleCloseButton, {
+  }, /*#__PURE__*/React.createElement(StyledModaleCloseButton, {
     id: "closeItem",
     onClick: handleClose,
     $closeitembgColor: itmBtnColor,
     $closeItembtncolor: itmColor,
     $closeitembuttonsize: itmBtnSize,
     $closeItembuttonradius: CloseItemRadius
-  }, /*#__PURE__*/_react.default.createElement(StyledModaleClosebuttonTextContent, {
+  }, /*#__PURE__*/React.createElement(StyledModaleClosebuttonTextContent, {
     id: "closeItemTextContent",
     $closeitembgColor: btnColor,
     $closeitembuttonsize: itmBtnSize,
     $closeItemFontColor: itmColor
-  }, "\u2716")), /*#__PURE__*/_react.default.createElement(StyledModaleMessage, {
+  }, "\u2716")), /*#__PURE__*/React.createElement(StyledModaleMessage, {
     id: "message",
     $closeItemTextcolor: txtColor,
     $textsize: txtSize,
     $textfamily: txtFamily
-  }, msg), /*#__PURE__*/_react.default.createElement(StyledModaleBtn, {
+  }, msg), /*#__PURE__*/React.createElement(StyledModaleBtn, {
     id: "button",
     onClick: btnOnClick ? btnOnClick && handleClose : handleClose //if btnOnClick is true then call btnOnClick and handleClose functions
     ,
